@@ -638,6 +638,8 @@
                   id="fullname"
                   autofocus
                   required
+                  minlength='3'
+                  maxlength='10'
                 />
                 <svg class="input-logo" width="16" height="16">
                   <use href="./images/symbol-form.svg#icon-person"></use>
@@ -655,6 +657,7 @@
                   name="phone"
                   id="phone"
                   required
+                  pattern='^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$'
                 />
                 <svg class="input-logo" width="18" height="24">
                   <use href="./images/symbol-form.svg#icon-phone"></use>
@@ -672,6 +675,7 @@
                   name="email"
                   id="email"
                   required
+                  minlength='5'
                 />
                 <svg class="input-logo" width="18" height="24">
                   <use href="./images/symbol-form.svg#icon-email"></use>
@@ -689,6 +693,7 @@
                 rows="5"
                 required
                 placeholder="Text input"
+                minlength='3'
               ></textarea>
             </label>
           </div>
@@ -698,6 +703,7 @@
               class="modal-checkbox visually-hidden"
               id="privacy-police"
               name="privacy-police"
+              required
             />
             <label for="privacy-police" class="modal-label-checkbox">
               <span class="modal-checkbox-icon">
